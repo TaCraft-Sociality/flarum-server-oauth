@@ -1,0 +1,67 @@
+tacraft-sociality-server-oauth:
+  admin:
+    permission:
+      use_oauth: Use OAuth
+    page:
+      index: Home
+      clients: Clients
+      scopes: Scopes
+      tokens: Tokens
+    settings:
+      display_mode: Display mode
+      access_lifetime: Access token lifetime (seconds)
+      allow_implicit: Allow implicit grant
+      enforce_state: Require the state parameter
+      require_exact_redirect_uri: Require an exact redirect URI
+      authorization_method_fetch: Authorize through a fetch request
+      allow_delete_records: Allow users to delete authorization records
+    clients:
+      client_id: Client ID
+      client_secret: Client secret
+      redirect_uri: Redirect URI
+      grant_types: Grant types
+      scope: Scope
+      client_name: Name
+      client_desc: Description
+      client_icon: Icon
+      client_home: Homepage
+      add_button: Add client
+      edit_client: Edit client
+    scopes:
+      scope: Scope
+      resource_path: Resource path
+      method: Method
+      is_default: Default
+      scope_name: Name
+      scope_icon: Icon
+      scope_desc: Description
+      visible_fields: Visible fields
+      add_button: Add scope
+      edit_scope: Edit scope
+    tokens:
+      add_token: Add token
+      delete_token: Delete expired tokens
+    action:
+      delete_all_records_button: Delete all records
+      delete_all_records_confirm: Delete all authorization records?
+      delete_all_records_success: Authorization records deleted
+  forum:
+    page:
+      title:
+        authorize: Authorize
+      label:
+        authorized: Authorizations
+    authorize:
+      require_these_scopes: This application requests access to
+      access: Access to
+      agree: Authorize
+      deny: Deny
+      login_required: Sign in to continue
+      email_unverified: Your community account email is not verified. Verify it on the community before signing in.
+    authorized:
+      no_records: No authorizations
+      no_more_records: No more records
+      load_more: Load more
+      delete_button: Delete
+      delete_all_button: Delete all
+      delete_all_confirm: Delete all authorization records?

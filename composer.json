@@ -1,0 +1,42 @@
+{
+    "name": "tacraft-sociality/flarum-server-oauth",
+    "description": "OAuth2 authorization server for Flarum",
+    "keywords": [
+        "flarum",
+        "oauth",
+        "oauth2",
+        "server"
+    ],
+    "type": "flarum-extension",
+    "version": "1.0.1",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tacraft Sociality"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "flarum/core": "^2.0.2",
+        "bshaffer/oauth2-server-php": "^1.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "TacraftSociality\\ServerOAuth\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Server OAuth",
+            "category": "feature",
+            "icon": {
+                "name": "fas fa-lock",
+                "color": "#fff",
+                "backgroundColor": "#0d6efd"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
